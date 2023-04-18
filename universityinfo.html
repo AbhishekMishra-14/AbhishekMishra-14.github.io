@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <title>university Website </title>
   <link rel="stylesheet" href="websitee.css" />
+  
   <!-- Font Awesome Cdn Link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
 </head>
@@ -23,7 +24,6 @@
             <a href="feedback.html">Feedback</a>
             <a href="aboutus.html">About US</a>
 
-            <button class="lg_btn">Login</button>
           </div>
       </div>
     </div>
@@ -31,12 +31,17 @@
 
   <section class="home_section">
     <div class="overlay">
+      
       <div class="container">
+        
         <div class="home">
-          <h1><span>meet</span> people <br>discover <span>university</span> <br><span>enjoy</span> life</h1>
+          <video id="myVideo" class="home">
+          <source src="top10.mp4" type="video/mp4">
+        </video>
+          <h1 id="vanished"><span>meet</span> people <br>discover <span>university</span> <br><span>enjoy</span> life</h1>
           <div class="home_buttons">
-            <button class="btn1">Explore World</button>
-            <button><i class="fas fa-play"></i>Video</button>
+            <button class="btn1" onClick="parent.open('https://www.topuniversities.com/student-info/choosing-university/worlds-top-100-universities')">Explore World</button>
+            <button  id="myBtn" onclick="myFunction()"><i class="fas fa-play"></i>Video</button>
           </div>
         </div>
       </div>
@@ -47,7 +52,7 @@
     <div class="container">
       <div class="title"><a name="top"></a>
         <h1>INDIA'S TOP  <span> 10 university </span></h1>
-        <span class="slogan">enjoy your carrer</span>
+        <span class="slogan">Enjoy your carrer</span>
       </div>
       <div class="services_boxes">
         <div class="box">
@@ -129,6 +134,6 @@
     <p>VIT has   the aim of providing quality higher education on par with international standards</p>
   </div>
   </section>
-
+  <script type="text/javascript" src="script.js"></script> 
 </body>
 </html>
